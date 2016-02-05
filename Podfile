@@ -10,6 +10,7 @@ def network_and_test_pod
     pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git'
     pod 'RxSwift'
     pod 'RxAlamofire'
+    pod 'SnapKit'
 end
 
 target 'StubNBDDTest' do
