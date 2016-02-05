@@ -17,6 +17,11 @@ PODS:
   - OHHTTPStubs/Swift (4.7.0):
     - OHHTTPStubs/Core
   - Quick (0.9.0)
+  - RxAlamofire (1.1.1):
+    - RxAlamofire/Core (= 1.1.1)
+  - RxAlamofire/Core (1.1.1):
+    - Alamofire (~> 3.0)
+    - RxSwift (~> 2.0)
   - RxSwift (2.1.0)
   - SwiftyJSON (2.3.2)
 
@@ -26,6 +31,7 @@ DEPENDENCIES:
   - OHHTTPStubs
   - OHHTTPStubs/Swift
   - Quick (~> 0.9.0)
+  - RxAlamofire
   - RxSwift
   - SwiftyJSON (from `https://github.com/SwiftyJSON/SwiftyJSON.git`)
 
@@ -43,6 +49,7 @@ SPEC CHECKSUMS:
   Nimble: 4c353d43735b38b545cbb4cb91504588eb5de926
   OHHTTPStubs: d2bf6a0f407620d67e75a1d3f12d86a2b1dd15c0
   Quick: 332eb1da73125a2106dd637424c803f2ae97e4a9
+  RxAlamofire: 5900f3842dd7bad9ca620bfb5917b9c984db5cca
   RxSwift: 110fb07f81c17c2c3b3254d168363057b1880d18
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 

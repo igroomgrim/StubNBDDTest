@@ -9,6 +9,7 @@ def network_and_test_pod
     pod 'Nimble', '3.0.0'
     pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git'
     pod 'RxSwift'
+    pod 'RxAlamofire'
 end
 
 target 'StubNBDDTest' do
