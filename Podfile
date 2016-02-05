@@ -7,6 +7,8 @@ def network_and_test_pod
     pod 'OHHTTPStubs/Swift'
     pod 'Quick', '~> 0.9.0'
     pod 'Nimble', '3.0.0'
+    pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git'
+    pod 'RxSwift'
 end
 
 target 'StubNBDDTest' do
