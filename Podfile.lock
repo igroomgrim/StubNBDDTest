@@ -22,6 +22,8 @@ PODS:
   - RxAlamofire/Core (1.1.1):
     - Alamofire (~> 3.0)
     - RxSwift (~> 2.0)
+  - RxCocoa (2.1.0):
+    - RxSwift (~> 2.0)
   - RxSwift (2.1.0)
   - SnapKit (0.19.1)
   - SwiftyJSON (2.3.2)
@@ -33,6 +35,7 @@ DEPENDENCIES:
   - OHHTTPStubs/Swift
   - Quick (~> 0.9.0)
   - RxAlamofire
+  - RxCocoa
   - RxSwift
   - SnapKit
   - SwiftyJSON (from `https://github.com/SwiftyJSON/SwiftyJSON.git`)
@@ -52,6 +55,7 @@ SPEC CHECKSUMS:
   OHHTTPStubs: d2bf6a0f407620d67e75a1d3f12d86a2b1dd15c0
   Quick: 332eb1da73125a2106dd637424c803f2ae97e4a9
   RxAlamofire: 5900f3842dd7bad9ca620bfb5917b9c984db5cca
+  RxCocoa: 79b5feb8378545336e756a0a33fcf5e95050b71c
   RxSwift: 110fb07f81c17c2c3b3254d168363057b1880d18
   SnapKit: eff58d6e3451bf2f482db2eccf86aecf371dc62d
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
