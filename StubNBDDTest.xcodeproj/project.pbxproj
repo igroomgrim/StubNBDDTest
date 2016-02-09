@@ -18,6 +18,7 @@
 		6088CA7AC0DFD33299D1CDF5 /* Pods_StubNBDDTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 364E74922EA0E57406E68BF5 /* Pods_StubNBDDTestTests.framework */; };
 		98506B731C6489A9006CCFF0 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98506B721C6489A9006CCFF0 /* Post.swift */; };
 		98506B771C6489F6006CCFF0 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98506B761C6489F6006CCFF0 /* PostViewModel.swift */; };
+		98506B7B1C69D427006CCFF0 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98506B7A1C69D427006CCFF0 /* PostCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		364E74922EA0E57406E68BF5 /* Pods_StubNBDDTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StubNBDDTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98506B721C6489A9006CCFF0 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Post.swift; path = Model/Post.swift; sourceTree = "<group>"; };
 		98506B761C6489F6006CCFF0 /* PostViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostViewModel.swift; path = ViewModel/PostViewModel.swift; sourceTree = "<group>"; };
+		98506B7A1C69D427006CCFF0 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostCell.swift; path = View/PostCell.swift; sourceTree = "<group>"; };
 		D5EE99A0FC97D556C7E4BBA1 /* Pods-StubNBDDTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StubNBDDTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StubNBDDTest/Pods-StubNBDDTest.debug.xcconfig"; sourceTree = "<group>"; };
 		E0C29D187EFAC4381234A491 /* Pods-StubNBDDTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StubNBDDTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-StubNBDDTest/Pods-StubNBDDTest.release.xcconfig"; sourceTree = "<group>"; };
 		FD77378E6EB8C521C2D116FC /* Pods_StubNBDDTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StubNBDDTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,6 +117,7 @@
 			children = (
 				1497D0641C63AE3400773F2A /* AppDelegate.swift */,
 				1497D0661C63AE3400773F2A /* ViewController.swift */,
+				98506B7C1C69D431006CCFF0 /* View */,
 				98506B781C6489FD006CCFF0 /* ViewModel */,
 				98506B751C6489C0006CCFF0 /* Model */,
 				98506B741C6489B4006CCFF0 /* Assets */,
@@ -165,6 +168,14 @@
 				98506B761C6489F6006CCFF0 /* PostViewModel.swift */,
 			);
 			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		98506B7C1C69D431006CCFF0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				98506B7A1C69D427006CCFF0 /* PostCell.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		ADA79BCFD76514D4F7391825 /* Frameworks */ = {
@@ -421,6 +432,7 @@
 				98506B731C6489A9006CCFF0 /* Post.swift in Sources */,
 				1497D0671C63AE3400773F2A /* ViewController.swift in Sources */,
 				1497D0651C63AE3400773F2A /* AppDelegate.swift in Sources */,
+				98506B7B1C69D427006CCFF0 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
