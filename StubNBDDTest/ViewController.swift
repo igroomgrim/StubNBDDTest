@@ -12,7 +12,9 @@ import RxSwift
 import RxCocoa
 
 class ViewController: UIViewController {
-
+    
+    var disposeBag = DisposeBag()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let pullButton = UIButton()
@@ -30,23 +32,16 @@ class ViewController: UIViewController {
         
         let tableView = UITableView()
         self.view.addSubview(tableView)
-        tableView.registerClass(PostCell.self, forCellReuseIdentifier: "PostCell")
+        tableView.registerClass(PostCell.self, forCellReuseIdentifier: PostCell.REUSE_ID)
         tableView.snp_makeConstraints { (make) -> Void in
             make.width.equalTo(self.view)
             make.height.equalTo(self.view.snp_height).offset(-100)
             make.top.equalTo(100)
         }
         
-        let disposeBag = DisposeBag()
-        
-        let items = Observable.just([
-            "First Item",
-            "Second Item",
-            "Third Item"
-            ])
-        
+        let items = Observable.just(["a","b","c"])
         items
-            .bindTo(tableView.rx_itemsWithCellIdentifier("PostCell", cellType: PostCell.self)) { (row, element, cell) in
+            .bindTo(tableView.rx_itemsWithCellIdentifier(PostCell.REUSE_ID, cellType: PostCell.self)) { (row, element, cell) in
                 cell.textLabel?.text = "\(element) @ row \(row)"
             }
             .addDisposableTo(disposeBag)
@@ -55,10 +50,13 @@ class ViewController: UIViewController {
         tableView
             .rx_modelSelected(String)
             .subscribeNext { value in
-//                DefaultWireframe.presentAlert("Tapped `\(value)`")
                 print("\(value)")
             }
             .addDisposableTo(disposeBag)
+        
+        pullButton.rx_tap.subscribeNext {
+
+        }.addDisposableTo(disposeBag)
     }
 
     override func didReceiveMemoryWarning() {

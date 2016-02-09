@@ -9,7 +9,9 @@
 import UIKit
 
 class PostCell: UITableViewCell {
-
+    
+    static let REUSE_ID = "PostCell"
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
